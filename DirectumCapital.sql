@@ -13,6 +13,7 @@ SELECT w.worker_tabnumber tab_num,
        COMPANY.COMPANY_ID COMPANY_ID,
        WTT.WTRANSIT_DATE
 FROM SYSDBA.T_WORKER W
+                   
 JOIN SYSDBA.STAFFWORKER SW ON W.WORKER_ID = SW.WORKER_ID 
   AND (sw.stafftype_id = 1 or sw.stafftype_id = 3)
   AND (SW.STAFFWORKER_DATEEND > SYSDATE OR sw.staffworker_dateend IS NULL)
