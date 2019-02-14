@@ -12,7 +12,6 @@ SELECT w.worker_tabnumber tab_num,
        RTRIM(upper(wp.wposition_fullname)) POSITION,
        COMPANY.COMPANY_ID COMPANY_ID,
        WTT.WTRANSIT_DATE
-             
 FROM SYSDBA.T_WORKER W
 JOIN SYSDBA.STAFFWORKER SW ON W.WORKER_ID = SW.WORKER_ID 
   AND (sw.stafftype_id = 1 or sw.stafftype_id = 3)
