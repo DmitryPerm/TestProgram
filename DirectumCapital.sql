@@ -1,3 +1,4 @@
+-- Вывод для Directum информации о работающих сотрудниках, с вложенностью подразделений до 5 уровня
 SELECT w.worker_tabnumber tab_num,
        INITCAP(RTRIM(w.worker_familyname)) family,
        INITCAP(RTRIM(w.worker_firstname)) name,
