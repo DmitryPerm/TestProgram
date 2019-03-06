@@ -1,3 +1,4 @@
+-- Выборка из куба информации о действующем % скидки по типу клиента Сотрудник
 SELECT   DISTINCT(dim_DC.DC_CODE)
         , DC_skidka
         , dc_type_name
